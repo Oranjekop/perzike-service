@@ -12,6 +12,8 @@ require (
 	golang.org/x/sys v0.43.0
 )
 
+replace github.com/xishang0128/sysproxy-go => github.com/Oranjekop/sysproxy-go v0.0.0-20260426195823-de059c4f0a41
+
 require (
 	github.com/ajg/form v1.7.1 // indirect
 	github.com/ebitengine/purego v0.10.0 // indirect
