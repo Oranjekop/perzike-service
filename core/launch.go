@@ -413,7 +413,7 @@ func maxLogFileSizeBytes(mb int) int64 {
 func resolveCoreExecutablePath(rawPath string, allowEnv bool) (string, error) {
 	path := strings.TrimSpace(rawPath)
 	if path == "" && allowEnv {
-		path = strings.TrimSpace(os.Getenv("SPARKLE_CORE_PATH"))
+		path = strings.TrimSpace(os.Getenv("PERZIKE_CORE_PATH"))
 	}
 	if path == "" {
 		return "", fmt.Errorf("未配置核心路径")
@@ -635,7 +635,7 @@ func launchProfilePath() string {
 }
 
 func serviceConfigDir() string {
-	if dir := os.Getenv("SPARKLE_CONFIG_DIR"); dir != "" {
+	if dir := os.Getenv("PERZIKE_CONFIG_DIR"); dir != "" {
 		return dir
 	}
 

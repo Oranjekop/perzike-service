@@ -12,7 +12,7 @@ import (
 	"syscall"
 )
 
-const serviceRuntimeExecEnv = "SPARKLE_SERVICE_RUNTIME_EXEC"
+const serviceRuntimeExecEnv = "PERZIKE_SERVICE_RUNTIME_EXEC"
 
 func ensureServiceRuntimeExecutable() error {
 	if os.Getenv(serviceRuntimeExecEnv) == "1" {

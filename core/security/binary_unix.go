@@ -10,7 +10,7 @@ import (
 
 func SecureBinary(corePath string) error {
 	if os.Getenv("PERZIKE_SKIP_CORE_ACL_HARDENING") == "1" ||
-		os.Getenv("SPARKLE_SKIP_CORE_ACL_HARDENING") == "1" {
+		os.Getenv("PERZIKE_SKIP_CORE_ACL_HARDENING") == "1" {
 		return nil
 	}
 

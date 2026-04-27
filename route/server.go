@@ -26,7 +26,7 @@ var (
 )
 
 func GetConfigDir() string {
-	if dir := os.Getenv("SPARKLE_CONFIG_DIR"); dir != "" {
+	if dir := os.Getenv("PERZIKE_CONFIG_DIR"); dir != "" {
 		return dir
 	}
 

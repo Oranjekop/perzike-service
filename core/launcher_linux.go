@@ -14,7 +14,7 @@ import (
 	"syscall"
 )
 
-const disableLinuxSandboxEnv = "SPARKLE_CORE_DISABLE_LINUX_SANDBOX"
+const disableLinuxSandboxEnv = "PERZIKE_CORE_DISABLE_LINUX_SANDBOX"
 
 const linuxSandboxCloneFlags = syscall.CLONE_NEWIPC |
 	syscall.CLONE_NEWUTS

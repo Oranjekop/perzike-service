@@ -190,7 +190,7 @@ func buildCanonicalRequestV2(r *http.Request, timestamp string, nonce string, ke
 	}
 
 	return strings.Join([]string{
-		"SPARKLE-AUTH-V2",
+		"PERZIKE-AUTH-V2",
 		timestamp,
 		nonce,
 		keyID,
