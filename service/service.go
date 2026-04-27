@@ -90,9 +90,9 @@ func newConfig(executablePath string) *kservice.Config {
 	options["RunAtLoadOnMac"] = true
 
 	return &kservice.Config{
-		Name:         "SparkleService",
-		DisplayName:  "Sparkle Service",
-		Description:  "Sparkle 提权服务",
+		Name:         "PerzikeService",
+		DisplayName:  "Perzike Service",
+		Description:  "Perzike 提权服务",
 		Executable:   executablePath,
 		Arguments:    []string{"service", "run"},
 		Dependencies: depends,
@@ -103,7 +103,7 @@ func newConfig(executablePath string) *kservice.Config {
 var sysvScript = `#!/bin/sh /etc/rc.common
 DESCRIPTION="{{.Description}}"
 cmd="{{.Path}}"
-name="SparkleService"
+name="PerzikeService"
 pid_file="/var/run/$name.pid"
 
 start() {

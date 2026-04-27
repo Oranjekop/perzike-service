@@ -4,7 +4,7 @@ package coreapi
 
 import (
 	"net/http"
-	corepkg "sparkle-service/core"
+	corepkg "perzike-service/core"
 )
 
 func coreLaunchOptions(_ *http.Request) []corepkg.LaunchOption {

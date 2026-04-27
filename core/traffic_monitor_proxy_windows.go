@@ -10,11 +10,11 @@ import (
 	"net"
 	"net/http"
 	"net/http/httputil"
-	"sparkle-service/listen"
-	"sparkle-service/listen/namedpipe"
+	"perzike-service/listen"
+	"perzike-service/listen/namedpipe"
 )
 
-const trafficMonitorPipeAddress = `\\.\pipe\Sparkle\mihomo`
+const trafficMonitorPipeAddress = `\\.\pipe\Perzike\mihomo`
 
 func startTrafficMonitorProxy(launch *launchSession, sddl string) (func(), error) {
 	if launch == nil || launch.controllerNet != "pipe" || launch.controllerAddr == "" {

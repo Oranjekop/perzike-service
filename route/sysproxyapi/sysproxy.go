@@ -3,8 +3,8 @@ package sysproxyapi
 import (
 	"fmt"
 	"net/http"
-	"sparkle-service/log"
-	"sparkle-service/route/httphelper"
+	"perzike-service/log"
+	"perzike-service/route/httphelper"
 	"time"
 
 	"github.com/go-chi/chi/v5"

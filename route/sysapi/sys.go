@@ -3,8 +3,8 @@ package sysapi
 import (
 	"fmt"
 	"net/http"
-	"sparkle-service/route/httphelper"
-	"sparkle-service/sys"
+	"perzike-service/route/httphelper"
+	"perzike-service/sys"
 
 	"github.com/go-chi/chi/v5"
 )

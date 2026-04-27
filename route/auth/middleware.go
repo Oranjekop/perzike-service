@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"sparkle-service/route/httphelper"
+	"perzike-service/route/httphelper"
 )
 
 const (

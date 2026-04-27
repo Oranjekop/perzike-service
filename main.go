@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"sparkle-service/cmd"
+	"perzike-service/cmd"
 )
 
 func main() {

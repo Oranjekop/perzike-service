@@ -68,7 +68,7 @@ func (linuxSandboxLauncher) Command(launch *launchSession) (*exec.Cmd, error) {
 func prepareLinuxSandboxRoot(launch *launchSession) (string, func() error, error) {
 	cleanupStaleLinuxSandboxRoots()
 
-	root, err := os.MkdirTemp("", "sparkle-core-sandbox-*")
+	root, err := os.MkdirTemp("", "perzike-core-sandbox-*")
 	if err != nil {
 		return "", nil, fmt.Errorf("创建核心沙盒目录失败：%w", err)
 	}
@@ -161,7 +161,7 @@ func prepareLinuxSandboxStaticLayout(root string) error {
 }
 
 func cleanupStaleLinuxSandboxRoots() {
-	roots, err := filepath.Glob(filepath.Join(os.TempDir(), "sparkle-core-sandbox-*"))
+	roots, err := filepath.Glob(filepath.Join(os.TempDir(), "perzike-core-sandbox-*"))
 	if err != nil {
 		logSandboxCleanupError(fmt.Errorf("查找残留核心沙盒目录失败：%w", err))
 		return

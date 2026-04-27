@@ -1,4 +1,4 @@
-module sparkle-service
+module perzike-service
 
 go 1.25.0
 

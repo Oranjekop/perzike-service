@@ -12,8 +12,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"sparkle-service/core/controller"
-	"sparkle-service/core/security"
+	"perzike-service/core/controller"
+	"perzike-service/core/security"
 
 	"github.com/shirou/gopsutil/v4/process"
 )

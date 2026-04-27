@@ -1,6 +1,6 @@
 package route
 
-import routeauth "sparkle-service/route/auth"
+import routeauth "perzike-service/route/auth"
 
 type AuthorizedPrincipal = routeauth.AuthorizedPrincipal
 type KeyManager = routeauth.KeyManager

@@ -2,9 +2,9 @@ package coreapi
 
 import (
 	"net/http"
-	corepkg "sparkle-service/core"
-	"sparkle-service/route/auth"
-	"sparkle-service/route/httphelper"
+	corepkg "perzike-service/core"
+	"perzike-service/route/auth"
+	"perzike-service/route/httphelper"
 	"sync/atomic"
 
 	"github.com/go-chi/chi/v5"

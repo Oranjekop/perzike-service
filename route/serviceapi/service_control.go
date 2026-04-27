@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
-	"sparkle-service/log"
-	"sparkle-service/route/httphelper"
-	appservice "sparkle-service/service"
+	"perzike-service/log"
+	"perzike-service/route/httphelper"
+	appservice "perzike-service/service"
 
 	"github.com/go-chi/chi/v5"
 )

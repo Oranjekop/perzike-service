@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"sparkle-service/core/startupnotify"
+	"perzike-service/core/startupnotify"
 
 	"github.com/spf13/cobra"
 )

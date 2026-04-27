@@ -10,7 +10,7 @@ import (
 )
 
 func createNativeStartupHook(token string) (*coreStartupHook, error) {
-	socketDir, err := os.MkdirTemp("", "sparkle-core-ready-*")
+	socketDir, err := os.MkdirTemp("", "perzike-core-ready-*")
 	if err != nil {
 		return nil, fmt.Errorf("创建核心启动通知目录失败：%w", err)
 	}

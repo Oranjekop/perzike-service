@@ -8,15 +8,15 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
-	"sparkle-service/log"
-	"sparkle-service/route/auth"
-	"sparkle-service/route/coreapi"
-	"sparkle-service/route/pipectx"
-	"sparkle-service/route/sysproxyapi"
+	"perzike-service/log"
+	"perzike-service/route/auth"
+	"perzike-service/route/coreapi"
+	"perzike-service/route/pipectx"
+	"perzike-service/route/sysproxyapi"
 	"sync"
 	"syscall"
 
-	"sparkle-service/listen"
+	"perzike-service/listen"
 )
 
 var (
@@ -43,7 +43,7 @@ func GetConfigDir() string {
 func Start(addr string) error {
 	userDataDir := GetConfigDir()
 
-	keyDir := filepath.Join(userDataDir, "sparkle", "keys")
+	keyDir := filepath.Join(userDataDir, "perzike", "keys")
 
 	if err := auth.InitKeyManager(keyDir); err != nil {
 		log.Printf("警告: 初始化密钥管理器失败: %v", err)

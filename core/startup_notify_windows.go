@@ -5,12 +5,12 @@ package core
 import (
 	"fmt"
 
-	"sparkle-service/core/security"
-	"sparkle-service/listen"
+	"perzike-service/core/security"
+	"perzike-service/listen"
 )
 
 func createNativeStartupHook(token string) (*coreStartupHook, error) {
-	pipePath := `\\.\pipe\sparkle\core-ready-` + token
+	pipePath := `\\.\pipe\perzike\core-ready-` + token
 	listener, err := listen.ListenNamedPipe(pipePath, currentProcessPipeSDDL())
 	if err != nil {
 		return nil, fmt.Errorf("创建核心启动通知管道失败：%w", err)

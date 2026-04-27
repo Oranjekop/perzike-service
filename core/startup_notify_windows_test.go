@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"sparkle-service/listen"
+	"perzike-service/listen"
 )
 
 func TestCmdEchoNamedPipe(t *testing.T) {
 	token := "test-token"
-	pipePath := `\\.\pipe\sparkle\core-ready-test-` + fmt.Sprint(time.Now().UnixNano())
+	pipePath := `\\.\pipe\perzike\core-ready-test-` + fmt.Sprint(time.Now().UnixNano())
 	listener, err := listen.ListenNamedPipe(pipePath, "")
 	if err != nil {
 		t.Fatal(err)

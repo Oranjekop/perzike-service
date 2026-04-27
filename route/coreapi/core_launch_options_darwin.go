@@ -4,8 +4,8 @@ package coreapi
 
 import (
 	"net/http"
-	corepkg "sparkle-service/core"
-	"sparkle-service/route/pipectx"
+	corepkg "perzike-service/core"
+	"perzike-service/route/pipectx"
 )
 
 func coreLaunchOptions(r *http.Request) []corepkg.LaunchOption {

@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 	"net"
-	"sparkle-service/listen/namedpipe"
+	"perzike-service/listen/namedpipe"
 )
 
 func dialCoreController(ctx context.Context, network string, address string) (net.Conn, error) {

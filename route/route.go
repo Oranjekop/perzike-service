@@ -2,12 +2,12 @@ package route
 
 import (
 	"net/http"
-	"sparkle-service/route/auth"
-	"sparkle-service/route/coreapi"
-	"sparkle-service/route/httphelper"
-	"sparkle-service/route/serviceapi"
-	"sparkle-service/route/sysapi"
-	"sparkle-service/route/sysproxyapi"
+	"perzike-service/route/auth"
+	"perzike-service/route/coreapi"
+	"perzike-service/route/httphelper"
+	"perzike-service/route/serviceapi"
+	"perzike-service/route/sysapi"
+	"perzike-service/route/sysproxyapi"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"

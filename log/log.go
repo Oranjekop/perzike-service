@@ -7,11 +7,11 @@ import (
 )
 
 func currentLogPath() string {
-	return filepath.Join(os.TempDir(), "sparkle-service.log")
+	return filepath.Join(os.TempDir(), "perzike-service.log")
 }
 
 func previousLogPath() string {
-	return filepath.Join(os.TempDir(), "sparkle-service.previous.log")
+	return filepath.Join(os.TempDir(), "perzike-service.previous.log")
 }
 
 func rotateLogFiles() error {

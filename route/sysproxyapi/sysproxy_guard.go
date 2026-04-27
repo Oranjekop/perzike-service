@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"sync"
 
-	"sparkle-service/log"
+	"perzike-service/log"
 
 	"github.com/xishang0128/sysproxy-go/sysproxy"
 )

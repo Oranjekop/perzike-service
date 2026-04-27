@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"runtime"
 
-	"sparkle-service/route/pipectx"
+	"perzike-service/route/pipectx"
 
 	"golang.org/x/sys/windows"
 )

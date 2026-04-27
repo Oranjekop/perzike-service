@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"sparkle-service/route/pipectx"
+	"perzike-service/route/pipectx"
 )
 
 func getRequestPrincipal(r *http.Request) (string, string, bool, error) {

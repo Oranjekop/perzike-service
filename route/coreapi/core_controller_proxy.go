@@ -8,7 +8,7 @@ import (
 	"net/http/httputil"
 	"strings"
 
-	"sparkle-service/route/httphelper"
+	"perzike-service/route/httphelper"
 )
 
 func coreControllerProxy(w http.ResponseWriter, r *http.Request) {

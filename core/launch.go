@@ -16,8 +16,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"sparkle-service/core/controller"
-	"sparkle-service/core/security"
+	"perzike-service/core/controller"
+	"perzike-service/core/security"
 )
 
 type LaunchProfile struct {
@@ -631,7 +631,7 @@ func lookupEnvMap(envMap map[string]string, key string) (string, bool) {
 }
 
 func launchProfilePath() string {
-	return filepath.Join(serviceConfigDir(), "sparkle", "core", "launch_profile.json")
+	return filepath.Join(serviceConfigDir(), "perzike", "core", "launch_profile.json")
 }
 
 func serviceConfigDir() string {
